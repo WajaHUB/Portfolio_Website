@@ -40,10 +40,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-gradient {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
 }
 
 /* Navigation */
