@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing data science, machine learning
 
 ## 🌐 Live Demo
 
-Visit the live portfolio: [https://wajacode.github.io/Portfolio/](https://wajacode.github.io/Portfolio/) (Coming Soon)
+Visit the live portfolio: [https://wajahub.github.io/Portfolio_Website/) (Coming Soon)
 
 ## 📋 Table of Contents
 
