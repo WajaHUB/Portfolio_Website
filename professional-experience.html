@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wajahat Khan - Professional Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 40px 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #4f46e5, #7c3aed);
+            transform: translateX(-50%);
+        }
+
+        .experience-card {
+            position: relative;
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .experience-card:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .experience-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .card-content {
+            width: 45%;
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #e5e7eb;
+            position: relative;
+        }
+
+        .experience-card:nth-child(odd) .card-content {
+            margin-right: 10%;
+        }
+
+        .experience-card:nth-child(even) .card-content {
+            margin-left: 10%;
+        }
+
+        .card-content::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+        }
+
+        .experience-card:nth-child(odd) .card-content::before {
+            right: -30px;
+            border-left-color: white;
+        }
+
+        .experience-card:nth-child(even) .card-content::before {
+            left: -30px;
+            border-right-color: white;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .apple-dot {
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+        }
+
+        .commerce-dot {
+            background: linear-gradient(135deg, #34D399, #10B981);
+        }
+
+        .spark-dot {
+            background: linear-gradient(135deg, #F59E0B, #D97706);
+        }
+
+        .berkeley-dot {
+            background: linear-gradient(135deg, #8B5CF6, #A855F7);
+        }
+
+        .chevron-dot {
+            background: linear-gradient(135deg, #EF4444, #DC2626);
+        }
+
+        .company-name {
+            color: #4f46e5;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+
+        .date-location {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .achievements {
+            list-style: none;
+        }
+
+        .achievements li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            color: #374151;
+            line-height: 1.5;
+        }
+
+        .achievements li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #4f46e5;
+            font-weight: bold;
+        }
+
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .visual-element {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            opacity: 0.1;
+            color: #4f46e5;
+        }
+
+        .experience-card:nth-child(odd) .visual-element {
+            margin-left: 10%;
+        }
+
+        .experience-card:nth-child(even) .visual-element {
+            margin-right: 10%;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-dot {
+                left: 30px;
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .experience-card {
+                flex-direction: column !important;
+                align-items: flex-start;
+                padding-left: 70px;
+            }
+
+            .card-content {
+                width: 100% !important;
+                margin: 0 !important;
+            }
+
+            .card-content::before {
+                display: none;
+            }
+
+            .visual-element {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Professional Experience</h1>
+            <p>My journey in technology and data science</p>
+        </div>
+
+        <div class="timeline">
+            <!-- Apple AI/ML Data Operations -->
+            <div class="experience-card">
+                <div class="timeline-dot apple-dot">🍎</div>
+                <div class="card-content">
+                    <div class="company-name">Apple Inc.</div>
+                    <div class="job-title">AI/ML Data Operations</div>
+                    <div class="date-location">
+                        <span>📅 June 2025 - Present</span>
+                        <span>📍 Cupertino, CA</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Developed geospatial maps (Node.js, React, Python) for AI/ML route planning</li>
+                        <li>Collaborated with engineers to identify model gaps and prepare evaluation data for AI/ML data pipelines</li>
+                        <li>Developed automation software reducing workflow time by 30% and boosting reliability</li>
+                        <li>Designed day-to-day structure of data collection workflows for confidential AI/ML initiative</li>
+                        <li>Automated data collection, validation, and preprocessing workflows using Python</li>
+                    </ul>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Pipelines</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+                <div class="visual-element">🔬</div>
+            </div>
+
+            <!-- Apple Data Collection Moderator -->
+            <div class="experience-card">
+                <div class="timeline-dot apple-dot">🍎</div>
+                <div class="card-content">
+                    <div class="company-name">Apple Inc.</div>
+                    <div class="job-title">Data Collection Moderator</div>
+                    <div class="date-location">
+                        <span>📅 January 2025 - May 2025</span>
+                        <span>📍 Cupertino, CA</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Reduced moderation workflow from 8 to 3 steps, cutting review time by 50%+</li>
+                        <li>Built "WajiWare" automation tool, scaling AWS uploads for thousands of devices</li>
+                        <li>Collected images and videos with Apple prototype devices</li>
+                        <li>Conducted human evaluation, annotation, and validation of AI/ML training data to support Apple Intelligence model development</li>
+                        <li>Configured and supported prototype hardware, ensuring safe, reliable operation</li>
+                    </ul>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Data Annotation</span>
+                        <span class="skill-tag">Process Optimization</span>
+                        <span class="skill-tag">Hardware Support</span>
+                    </div>
+                </div>
+                <div class="visual-element">📱</div>
+            </div>
+
+            <!-- ZC Global Commerce -->
+            <div class="experience-card">
+                <div class="timeline-dot commerce-dot">🛒</div>
+                <div class="card-content">
+                    <div class="company-name">ZC Global Commerce LLC</div>
+                    <div class="job-title">Data Analyst / E-Commerce Business Analyst</div>
+                    <div class="date-location">
+                        <span>📅 July 2023 - February 2025</span>
+                        <span>📍 Richmond, CA</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Launched and scaled direct-to-consumer e-commerce store with Shopify and Amazon integrations</li>
+                        <li>Analyzed customer behavior and sales data to inform pricing, inventory, promotions, and logistics decisions</li>
+                        <li>Improved revenue outcomes, order accuracy, and reduced shipping costs by 30%</li>
+                        <li>Managed e-commerce integrations and automated analytics workflows for operations and SEO optimization</li>
+                        <li>Achieved full tax compliance and legal registration while minimizing administrative overhead</li>
+                    </ul>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Shopify</span>
+                        <span class="skill-tag">Amazon</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Business Analytics</span>
+                        <span class="skill-tag">SEO</span>
+                    </div>
+                </div>
+                <div class="visual-element">📊</div>
+            </div>
+
+            <!-- The Spark Foundation -->
+            <div class="experience-card">
+                <div class="timeline-dot spark-dot">⚡</div>
+                <div class="card-content">
+                    <div class="company-name">The Spark Foundation</div>
+                    <div class="job-title">Data Science Intern</div>
+                    <div class="date-location">
+                        <span>📅 December 2022 - May 2023</span>
+                        <span>📍 Remote (Singapore)</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Built Tableau/Python dashboards and predictive ML models</li>
+                        <li>Developed bike-sharing predictor with 99.998% accuracy</li>
+                        <li>Created Kaggle-winning survival model</li>
+                        <li>Analyzed U.S. demographic and salary data using Python and SQL to uncover location-based trends</li>
+                        <li>Collaborated with Data Mining and ML teams on 9 cross-functional projects</li>
+                    </ul>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Predictive Modeling</span>
+                        <span class="skill-tag">Data Visualization</span>
+                    </div>
+                </div>
+                <div class="visual-element">🎯</div>
+            </div>
+
+            <!-- UC Berkeley Student Projects -->
+            <div class="experience-card">
+                <div class="timeline-dot berkeley-dot">🎓</div>
+                <div class="card-content">
+                    <div class="company-name">University of California, Berkeley</div>
+                    <div class="job-title">Data Science Student Projects</div>
+                    <div class="date-location">
+                        <span>📅 August 2023 - December 2023</span>
+                        <span>📍 Berkeley, CA</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Led 7-member team to develop random forest model predicting daily bike demand (99.9% accuracy)</li>
+                        <li>Achieved top 10% ranking in Kaggle Titanic Competition (700 participants)</li>
+                        <li>Built insurance eligibility classifier using logistic regression</li>
+                        <li>Developed housing price estimator using random forest algorithm</li>
+                        <li>Created Honda car sales predictor using linear regression with time series</li>
+                        <li>Built custom Ataxx Game AI with strategic move evaluation</li>
+                    </ul>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Random Forest</span>
+                        <span class="skill-tag">Logistic Regression</span>
+                        <span class="skill-tag">Time Series</span>
+                        <span class="skill-tag">Team Leadership</span>
+                    </div>
+                </div>
+                <div class="visual-element">🏆</div>
+            </div>
+
+            <!-- Chevron ROP Training -->
+            <div class="experience-card">
+                <div class="timeline-dot chevron-dot">⚙️</div>
+                <div class="card-content">
+                    <div class="company-name">Regional Occupation Program</div>
+                    <div class="job-title">Refinery/Process Plant Operations Training</div>
+                    <div class="date-location">
+                        <span>📅 January 2024 - May 2024</span>
+                        <span>📍 Richmond, CA</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Applied refinery safety protocols, hazard and operability studies (HAZOP), and incident reporting procedures</li>
+                        <li>Practiced maintenance planning, PPE use, and effective responses to unplanned equipment failures</li>
+                        <li>Trained in leadership techniques, chemical health hazard mapping, and emergency procedures</li>
+                        <li>Gained hands-on exposure to valves, pumps, compressors, furnaces, heat exchangers, and steam systems</li>
+                        <li>Earned ROP Certification in Refinery/Process Plant Operations</li>
+                    </ul>
+                    <div class="skills-tags">
+                        <span class="skill-tag">HAZOP</span>
+                        <span class="skill-tag">Safety Protocols</span>
+                        <span class="skill-tag">Process Equipment</span>
+                        <span class="skill-tag">Emergency Procedures</span>
+                        <span class="skill-tag">Maintenance Planning</span>
+                    </div>
+                </div>
+                <div class="visual-element">🏭</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
