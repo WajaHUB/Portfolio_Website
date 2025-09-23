@@ -43,3 +43,9 @@ build/
 # Temporary files
 *.tmp
 *.temp
+
+# Large academic directories - keep locally but exclude from GitHub Pages deployment
+wajakhan/
+DMA/
+Projects-master/
+Data100/
