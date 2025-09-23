@@ -1,15 +1,15 @@
 /* Custom CSS for Wajahat Khan Portfolio */
 
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --accent-color: #3b82f6;
+    --primary-color: #ea580c;
+    --secondary-color: #c2410c;
+    --accent-color: #f97316;
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --bg-dark: #111827;
     --bg-light: #f9fafb;
-    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-alt: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    --gradient-alt: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -1090,7 +1090,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill-badge:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
 }
 
 /* Mobile responsiveness for experience cards */
