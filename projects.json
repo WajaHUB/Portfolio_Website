@@ -118,7 +118,7 @@
       "category": "Machine Learning",
       "description": "Advanced ML projects including neural networks, RNNs, skip-gram models, and NLP applications.",
       "tech_stack": ["Python", "TensorFlow", "PyTorch", "NLP", "RNN", "Skip-gram", "Deep Learning"],
-      "github_url": "https://github.com/WajaCode/Portfolio/tree/main/DMA",
+      "github_url": "https://github.com/WajaCode/Portfolio_DATA_Science/tree/main/DMA",
       "image": "assets/projects/deep-learning.jpg",
       "featured": true,
       "highlights": [
