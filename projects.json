@@ -6,7 +6,7 @@
       "category": "Machine Learning",
       "description": "ML project predicting bike demand using weather data, LSTM, Random Forest, and Linear Regression models.",
       "tech_stack": ["Python", "Pandas", "Scikit-learn", "TensorFlow", "Weather API", "Jupyter"],
-      "github_url": "https://github.com/WajaCode/Portfolio/tree/main/Projects-master/Bike_Sharing",
+      "github_url": "https://github.com/WajaCode/Portfolio_DATA_Science/tree/main/Projects-master/Bike_Sharing",
       "image": "assets/projects/bike-sharing.jpg",
       "featured": true,
       "highlights": [
@@ -22,7 +22,7 @@
       "category": "Data Science",
       "description": "Web scraping project analyzing college track & field performances across conferences with statistical comparisons.",
       "tech_stack": ["Python", "BeautifulSoup", "Pandas", "Web Scraping", "Data Analysis"],
-      "github_url": "https://github.com/WajaCode/Portfolio/tree/main/Projects-master/BLR_CODE",
+      "github_url": "https://github.com/WajaCode/Portfolio_DATA_Science/tree/main/Projects-master/BLR_CODE",
       "image": "assets/projects/sports-analytics.jpg",
       "featured": true,
       "highlights": [
@@ -38,7 +38,7 @@
       "category": "Data Analysis",
       "description": "Statistical analysis of Honda vehicle sales data to identify market trends and customer preferences.",
       "tech_stack": ["Python", "Pandas", "Matplotlib", "Seaborn", "Statistical Analysis"],
-      "github_url": "https://github.com/WajaCode/Portfolio/tree/main/Projects-master/Honda_Project",
+      "github_url": "https://github.com/WajaCode/Portfolio_DATA_Science/tree/main/Projects-master/Honda_Project",
       "image": "assets/projects/honda-analysis.jpg",
       "featured": false,
       "highlights": [
@@ -54,7 +54,7 @@
       "category": "Software Development",
       "description": "Java implementation of Git-like version control system with commits, branches, merging, and file tracking.",
       "tech_stack": ["Java", "Data Structures", "Algorithms", "File Systems"],
-      "github_url": "https://github.com/WajaCode/Portfolio/tree/main/Projects-master/GitLet",
+      "github_url": "https://github.com/WajaCode/Portfolio_DATA_Science/tree/main/Projects-master/GitLet",
       "image": "assets/projects/gitlet.jpg",
       "featured": true,
       "highlights": [
@@ -70,7 +70,7 @@
       "category": "Software Development",
       "description": "WWII encryption machine simulator with historical rotor-based encryption system and accurate configurations.",
       "tech_stack": ["Java", "Cryptography", "Object-Oriented Design", "Historical Computing"],
-      "github_url": "https://github.com/WajaCode/Portfolio/tree/main/Projects-master/Engima%20-%20German%20Machine",
+      "github_url": "https://github.com/WajaCode/Portfolio_DATA_Science/tree/main/Projects-master/Engima%20-%20German%20Machine",
       "image": "assets/projects/enigma.jpg",
       "featured": false,
       "highlights": [
@@ -86,7 +86,7 @@
       "category": "Artificial Intelligence",
       "description": "Strategic board game AI using minimax algorithm with alpha-beta pruning for intelligent gameplay decisions.",
       "tech_stack": ["Java", "AI Algorithms", "Game Theory", "Minimax", "Alpha-Beta Pruning"],
-      "github_url": "https://github.com/WajaCode/Portfolio/tree/main/Projects-master/Attax%20A.I%20project",
+      "github_url": "https://github.com/WajaCode/Portfolio_DATA_Science/tree/main/Projects-master/Attax%20A.I%20project",
       "image": "assets/projects/attax-ai.jpg",
       "featured": false,
       "highlights": [
@@ -102,7 +102,7 @@
       "category": "Data Science",
       "description": "Foundational data science projects covering statistical analysis, data cleaning, and predictive modeling.",
       "tech_stack": ["Python", "Pandas", "NumPy", "Matplotlib", "Statistics", "Jupyter"],
-      "github_url": "https://github.com/WajaCode/Portfolio/tree/main/Data100",
+      "github_url": "https://github.com/WajaCode/Portfolio_DATA_Science/tree/main/Data100",
       "image": "assets/projects/data100.jpg",
       "featured": false,
       "highlights": [
