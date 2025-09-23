@@ -30,18 +30,17 @@ function createSimpleProjectCard(project) {
     const colDiv = document.createElement('div');
     colDiv.className = 'col-lg-4 col-md-6 mb-4';
     
+    // Use actual SVG image if available
+    const projectImage = project.image || `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="%23667eea"><rect width="400" height="200" fill="url(%23gradient)"/><defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23667eea"/><stop offset="100%" style="stop-color:%23764ba2"/></linearGradient></defs><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="20" font-weight="600">${project.title}</text></svg>`;
+    
     colDiv.innerHTML = `
         <div class="card project-card h-100 shadow-sm">
+            <img src="${projectImage}" class="card-img-top" alt="${project.title}" style="height: 200px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-start mb-3">
-                    <div class="project-icon me-3">
-                        <i class="${getProjectIcon(project.category)} fa-2x text-primary"></i>
-                    </div>
-                    <div class="flex-grow-1">
-                        <h5 class="card-title mb-1">${project.title}</h5>
-                        <span class="badge bg-primary bg-opacity-10 text-primary">${project.category}</span>
-                    </div>
+                <div class="mb-2">
+                    <span class="badge bg-primary bg-opacity-10 text-primary">${project.category}</span>
                 </div>
+                <h5 class="card-title mb-2">${project.title}</h5>
                 
                 <p class="card-text text-muted flex-grow-1">${project.description}</p>
                 
@@ -57,7 +56,6 @@ function createSimpleProjectCard(project) {
                     <a href="${project.github_url}" target="_blank" class="btn btn-primary btn-sm">
                         <i class="fab fa-github me-2"></i>View Code
                     </a>
-                    ${project.featured ? '<span class="badge bg-warning text-dark ms-2">Featured</span>' : ''}
                 </div>
             </div>
         </div>
@@ -73,7 +71,8 @@ function getProjectIcon(category) {
         'Data Science': 'fas fa-chart-line',
         'Software Development': 'fas fa-code',
         'Artificial Intelligence': 'fas fa-robot',
-        'Data Analysis': 'fas fa-analytics'
+        'Data Analysis': 'fas fa-analytics',
+        'Mathematics': 'fas fa-calculator'
     };
     return iconMap[category] || 'fas fa-project-diagram';
 }

@@ -70,18 +70,19 @@ function initializeProjectsPage() {
     initializeProjectFilters();
 }
 
-// Load featured projects for home page
+// Load all projects for home page (no more featured concept)
 function loadFeaturedProjects() {
     if (!projectsData) return;
     
-    const featuredProjects = projectsData.filter(project => project.featured);
     const container = document.getElementById('featuredProjects');
-    
     if (!container) return;
     
     container.innerHTML = '';
     
-    featuredProjects.forEach(project => {
+    // Show first 6 projects instead of featured ones
+    const projectsToShow = projectsData.slice(0, 6);
+    
+    projectsToShow.forEach(project => {
         const projectCard = createProjectCard(project);
         const col = document.createElement('div');
         col.className = 'col-lg-4 col-md-6 mb-4';
@@ -114,11 +115,11 @@ function createProjectCard(project, showDetails = false) {
     const card = document.createElement('div');
     card.className = 'card project-card h-100';
     
-    const placeholderImage = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" fill="%23667eea"><rect width="400" height="220" fill="url(%23gradient)"/><defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23667eea"/><stop offset="100%" style="stop-color:%23764ba2"/></linearGradient></defs><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="24" font-weight="600">${project.title}</text></svg>`;
+    // Use actual SVG image if available, otherwise fallback
+    const projectImage = project.image || `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" fill="%23667eea"><rect width="400" height="220" fill="url(%23gradient)"/><defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23667eea"/><stop offset="100%" style="stop-color:%23764ba2"/></linearGradient></defs><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="24" font-weight="600">${project.title}</text></svg>`;
     
     card.innerHTML = `
-        ${project.featured ? '<div class="featured-badge">Featured</div>' : ''}
-        <img src="${placeholderImage}" class="card-img-top" alt="${project.title}">
+        <img src="${projectImage}" class="card-img-top" alt="${project.title}" style="height: 200px; object-fit: cover;">
         <div class="card-body d-flex flex-column">
             <div class="mb-2">
                 <span class="badge bg-primary rounded-pill">${project.category}</span>

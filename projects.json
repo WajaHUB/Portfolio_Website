@@ -8,7 +8,7 @@
       "tech_stack": ["Python", "Pandas", "Scikit-learn", "TensorFlow", "Weather API", "Jupyter"],
       "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Bike_Sharing_Project",
       "image": "assets/projects/bike-sharing.svg",
-      "featured": true,
+      "featured": false,
       "highlights": [
         "Integrated real-time weather API data",
         "Built multiple ML models for comparison",
@@ -24,7 +24,7 @@
       "tech_stack": ["Python", "Pandas", "Matplotlib", "Seaborn", "Statistical Analysis"],
       "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Honda_Sales_Project",
       "image": "assets/projects/honda-sales.svg",
-      "featured": true,
+      "featured": false,
       "highlights": [
         "Sales trend analysis",
         "Customer segmentation",
@@ -40,7 +40,7 @@
       "tech_stack": ["Java", "Data Structures", "Algorithms", "File Systems"],
       "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/GitLet_Project",
       "image": "assets/projects/gitlet.svg",
-      "featured": true,
+      "featured": false,
       "highlights": [
         "Complete version control implementation",
         "Branch and merge functionality",
@@ -104,7 +104,7 @@
       "tech_stack": ["LaTeX", "Python", "Mathematical Modeling", "Statistical Analysis"],
       "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Math_Assignments",
       "image": "assets/projects/math.svg",
-      "featured": true,
+      "featured": false,
       "highlights": [
         "Advanced calculus and probability theory",
         "Linear algebra applications",
