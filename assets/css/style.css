@@ -196,6 +196,77 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Floating animations for hero elements */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Tech visualization */
+.tech-visualization {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.floating-element {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.floating-element:hover {
+    opacity: 1;
+    transform: scale(1.1) !important;
+}
+
+/* Skills visualization */
+.skills-visualization .skill-badge {
+    transition: all 0.3s ease;
+    animation: fadeInScale 0.8s ease forwards;
+}
+
+.skills-visualization .skill-badge:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.central-badge {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+}
+
 /* Sections */
 .section-padding {
     padding: 100px 0;

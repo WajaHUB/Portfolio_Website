@@ -79,11 +79,45 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image">
-                        <div class="code-animation">
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
+                        <div class="tech-visualization">
+                            <!-- AI Robot Icon -->
+                            <div class="floating-element robot" style="position: absolute; top: 20%; right: 10%; color: #00d4ff; font-size: 3rem; animation: float 3s ease-in-out infinite;">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            
+                            <!-- Data Chart -->
+                            <div class="floating-element chart" style="position: absolute; top: 50%; right: 30%; color: #4CAF50; font-size: 2.5rem; animation: float 4s ease-in-out infinite 0.5s;">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            
+                            <!-- Code Icon -->
+                            <div class="floating-element code" style="position: absolute; top: 70%; right: 15%; color: #FF6B6B; font-size: 2rem; animation: float 3.5s ease-in-out infinite 1s;">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            
+                            <!-- Brain/AI Icon -->
+                            <div class="floating-element brain" style="position: absolute; top: 30%; right: 45%; color: #9C27B0; font-size: 2.2rem; animation: float 3.8s ease-in-out infinite 1.5s;">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            
+                            <!-- Database Icon -->
+                            <div class="floating-element database" style="position: absolute; top: 60%; right: 50%; color: #FF9800; font-size: 2rem; animation: float 4.2s ease-in-out infinite 2s;">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            
+                            <!-- Mathematical Formula -->
+                            <div class="floating-element formula" style="position: absolute; top: 40%; right: 20%; color: #E91E63; font-size: 1.8rem; animation: float 3.2s ease-in-out infinite 0.8s;">
+                                <i class="fas fa-square-root-alt"></i>
+                            </div>
+                            
+                            <!-- Central Tech Circle -->
+                            <div class="tech-circle" style="position: absolute; top: 50%; right: 35%; width: 120px; height: 120px; border: 3px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: rotate 20s linear infinite;">
+                                <div style="text-align: center; color: white;">
+                                    <i class="fas fa-cogs" style="font-size: 2.5rem; margin-bottom: 5px;"></i>
+                                    <br>
+                                    <small style="font-size: 0.8rem;">ML & AI</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,8 +172,40 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <div class="image-frame">
-                            <img src="assets/img/profile-placeholder.jpg" alt="Wajahat Khan" class="img-fluid rounded">
+                        <div class="skills-visualization" style="position: relative; height: 400px; display: flex; align-items: center; justify-content: center;">
+                            <!-- Programming Languages -->
+                            <div class="skill-badge python" style="position: absolute; top: 15%; left: 10%; background: linear-gradient(135deg, #3776ab 0%, #ffd43b 100%); color: white; padding: 12px 20px; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(55,118,171,0.3);">
+                                <i class="fab fa-python me-2"></i>Python
+                            </div>
+                            
+                            <div class="skill-badge java" style="position: absolute; top: 30%; right: 15%; background: linear-gradient(135deg, #f89820 0%, #ed8b00 100%); color: white; padding: 12px 20px; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(248,152,32,0.3);">
+                                <i class="fab fa-java me-2"></i>Java
+                            </div>
+                            
+                            <!-- ML & AI Tools -->
+                            <div class="skill-badge ml" style="position: absolute; top: 50%; left: 5%; background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%); color: white; padding: 12px 20px; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(255,107,107,0.3);">
+                                <i class="fas fa-brain me-2"></i>TensorFlow
+                            </div>
+                            
+                            <div class="skill-badge data" style="position: absolute; top: 65%; right: 10%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(102,126,234,0.3);">
+                                <i class="fas fa-chart-bar me-2"></i>Pandas
+                            </div>
+                            
+                            <!-- Database & Cloud -->
+                            <div class="skill-badge db" style="position: absolute; top: 80%; left: 20%; background: linear-gradient(135deg, #2196F3 0%, #21CBF3 100%); color: white; padding: 12px 20px; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(33,150,243,0.3);">
+                                <i class="fas fa-database me-2"></i>SQL
+                            </div>
+                            
+                            <div class="skill-badge git" style="position: absolute; top: 20%; left: 45%; background: linear-gradient(135deg, #f05032 0%, #f14e32 100%); color: white; padding: 12px 20px; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(240,80,50,0.3);">
+                                <i class="fab fa-git-alt me-2"></i>Git
+                            </div>
+                            
+                            <!-- Central Data Science Badge -->
+                            <div class="central-badge" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px 30px; border-radius: 50px; text-align: center; box-shadow: 0 8px 30px rgba(102,126,234,0.4);">
+                                <i class="fas fa-microscope" style="font-size: 2rem; display: block; margin-bottom: 8px;"></i>
+                                <div style="font-weight: 600; font-size: 1.1rem;">Data Science</div>
+                                <div style="font-size: 0.85rem; opacity: 0.9;">& Analytics</div>
+                            </div>
                         </div>
                     </div>
                 </div>
