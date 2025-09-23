@@ -1,0 +1,101 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285F4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A73E8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34A853;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#137333;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="certGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBC04;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F9AB00;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#EA4335;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#EA4335;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8F9FA"/>
+  
+  <!-- Certificate background -->
+  <rect x="50" y="70" width="300" height="180" rx="15" fill="white" stroke="#E8EAED" stroke-width="3"/>
+  <rect x="60" y="80" width="280" height="160" rx="10" fill="#F8F9FA"/>
+  
+  <!-- Google Cloud logo elements -->
+  <circle cx="120" cy="130" r="20" fill="#4285F4"/>
+  <circle cx="140" cy="110" r="15" fill="#34A853"/>
+  <circle cx="160" cy="130" r="18" fill="#FBBC04"/>
+  <circle cx="140" cy="150" r="16" fill="#EA4335"/>
+  
+  <!-- Cloud shape -->
+  <path d="M200 120 Q210 110 225 115 Q240 110 250 120 Q260 115 270 125 Q265 135 250 140 L210 140 Q200 135 200 120 Z" 
+        fill="url(#cloudGradient)" opacity="0.8"/>
+  
+  <!-- AI brain/neural network -->
+  <circle cx="280" cy="160" r="8" fill="url(#aiGradient)"/>
+  <circle cx="260" cy="150" r="6" fill="url(#aiGradient)" opacity="0.7"/>
+  <circle cx="300" cy="150" r="6" fill="url(#aiGradient)" opacity="0.7"/>
+  <circle cx="270" cy="175" r="6" fill="url(#aiGradient)" opacity="0.7"/>
+  <circle cx="290" cy="175" r="6" fill="url(#aiGradient)" opacity="0.7"/>
+  
+  <!-- Neural connections -->
+  <line x1="280" y1="160" x2="260" y2="150" stroke="#34A853" stroke-width="2" opacity="0.6"/>
+  <line x1="280" y1="160" x2="300" y2="150" stroke="#34A853" stroke-width="2" opacity="0.6"/>
+  <line x1="280" y1="160" x2="270" y2="175" stroke="#34A853" stroke-width="2" opacity="0.6"/>
+  <line x1="280" y1="160" x2="290" y2="175" stroke="#34A853" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Certificate seal -->
+  <circle cx="300" cy="100" r="25" fill="url(#certGradient)"/>
+  <circle cx="300" cy="100" r="20" fill="white"/>
+  <circle cx="300" cy="100" r="15" fill="url(#certGradient)"/>
+  <text x="300" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">✓</text>
+  
+  <!-- Certificate ribbon -->
+  <path d="M290 125 L310 125 L305 140 L300 135 L295 140 Z" fill="url(#certGradient)"/>
+  
+  <!-- Generative AI visualization -->
+  <rect x="80" y="190" width="80" height="30" rx="5" fill="#E8F0FE" stroke="#4285F4" stroke-width="1"/>
+  <text x="120" y="200" text-anchor="middle" font-family="monospace" font-size="8" fill="#1A73E8">Input: "Create..."</text>
+  <text x="120" y="215" text-anchor="middle" font-family="monospace" font-size="8" fill="#137333">Output: Generated</text>
+  
+  <!-- Arrow -->
+  <path d="M170 205 L190 205" stroke="#EA4335" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- AI output visualization -->
+  <rect x="200" y="190" width="80" height="30" rx="5" fill="#E8F5E8" stroke="#34A853" stroke-width="1"/>
+  <circle cx="220" cy="200" r="3" fill="#34A853"/>
+  <circle cx="235" cy="205" r="3" fill="#34A853"/>
+  <circle cx="250" cy="200" r="3" fill="#34A853"/>
+  <circle cx="265" cy="210" r="3" fill="#34A853"/>
+  <polyline points="220,200 235,205 250,200 265,210" stroke="#34A853" stroke-width="2" fill="none"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EA4335"/>
+    </marker>
+  </defs>
+  
+  <!-- Certificate text -->
+  <text x="200" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">GOOGLE CLOUD</text>
+  <text x="200" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Generative AI</text>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#999">Fundamentals</text>
+  
+  <!-- Certification badge -->
+  <circle cx="80" cy="110" r="15" fill="url(#glowGradient)"/>
+  <text x="80" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">AI</text>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">Google Cloud Certification</text>
+  <text x="200" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Introduction to Generative AI</text>
+  
+  <!-- Google colors decoration -->
+  <rect x="50" y="260" width="75" height="8" fill="#4285F4"/>
+  <rect x="125" y="260" width="75" height="8" fill="#EA4335"/>
+  <rect x="200" y="260" width="75" height="8" fill="#FBBC04"/>
+  <rect x="275" y="260" width="75" height="8" fill="#34A853"/>
+</svg>

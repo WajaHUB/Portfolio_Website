@@ -17,30 +17,14 @@
       ]
     },
     {
-      "id": "sports-analytics",
-      "title": "Track & Field Performance Analytics",
-      "category": "Data Science",
-      "description": "Automated web scraping system that analyzes college track & field performance data across different conferences with statistical ranking algorithms.",
-      "tech_stack": ["Python", "BeautifulSoup", "Pandas", "Web Scraping", "Data Analysis"],
-      "github_url": "https://github.com/WajaCode",
-      "image": "assets/projects/sports-analytics.svg",
-      "featured": true,
-      "highlights": [
-        "Automated web scraping of athletic databases",
-        "Data transformation and cleaning",
-        "Cross-conference performance comparison",
-        "Statistical ranking algorithms"
-      ]
-    },
-    {
       "id": "honda-project",
       "title": "Honda Sales Analysis",
       "category": "Data Analysis",
       "description": "Comprehensive analysis of Honda vehicle sales data revealing market trends, customer segmentation, and actionable business insights.",
       "tech_stack": ["Python", "Pandas", "Matplotlib", "Seaborn", "Statistical Analysis"],
-      "github_url": "https://github.com/WajaCode",
-      "image": "assets/projects/bike-sharing.svg",
-      "featured": false,
+      "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Honda_Sales_Project",
+      "image": "assets/projects/honda-sales.svg",
+      "featured": true,
       "highlights": [
         "Sales trend analysis",
         "Customer segmentation",
@@ -54,7 +38,7 @@
       "category": "Software Development",
       "description": "Full-featured version control system built in Java, implementing Git's core functionality including commits, branches, merging, and distributed file tracking.",
       "tech_stack": ["Java", "Data Structures", "Algorithms", "File Systems"],
-      "github_url": "https://github.com/WajaCode",
+      "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/GitLet_Project",
       "image": "assets/projects/gitlet.svg",
       "featured": true,
       "highlights": [
@@ -70,8 +54,8 @@
       "category": "Software Development",
       "description": "Historically accurate simulation of the WWII Enigma encryption machine with authentic rotor configurations and cryptographic algorithms.",
       "tech_stack": ["Java", "Cryptography", "Object-Oriented Design", "Historical Computing"],
-      "github_url": "https://github.com/WajaCode",
-      "image": "assets/projects/gitlet.svg",
+      "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Enigma_Project",
+      "image": "assets/projects/enigma.svg",
       "featured": false,
       "highlights": [
         "Accurate historical implementation",
@@ -86,8 +70,8 @@
       "category": "Artificial Intelligence",
       "description": "Intelligent game AI implementing minimax algorithm with alpha-beta pruning optimization for strategic decision-making in the Attax board game.",
       "tech_stack": ["Java", "AI Algorithms", "Game Theory", "Minimax", "Alpha-Beta Pruning"],
-      "github_url": "https://github.com/WajaCode",
-      "image": "assets/projects/gitlet.svg",
+      "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Attax_AI_Project",
+      "image": "assets/projects/attax.svg",
       "featured": false,
       "highlights": [
         "Strategic game AI implementation",
@@ -102,8 +86,8 @@
       "category": "Data Science",
       "description": "Collection of foundational data science projects demonstrating statistical analysis, data preprocessing, exploratory analysis, and predictive modeling techniques.",
       "tech_stack": ["Python", "Pandas", "NumPy", "Matplotlib", "Statistics", "Jupyter"],
-      "github_url": "https://github.com/WajaCode",
-      "image": "assets/projects/sports-analytics.svg",
+      "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Data_Science_Projects",
+      "image": "assets/projects/data-science.svg",
       "featured": false,
       "highlights": [
         "Statistical analysis techniques",
@@ -113,19 +97,35 @@
       ]
     },
     {
-      "id": "dma-ml-projects",
-      "title": "Deep Learning & NLP Projects",
-      "category": "Machine Learning",
-      "description": "Advanced machine learning projects featuring deep neural networks, RNNs, skip-gram word embeddings, and natural language processing applications.",
-      "tech_stack": ["Python", "TensorFlow", "PyTorch", "NLP", "RNN", "Skip-gram", "Deep Learning"],
-      "github_url": "https://github.com/WajaCode",
-      "image": "assets/projects/deep-learning.svg",
+      "id": "math-assignments",
+      "title": "Advanced Mathematics Assignments",
+      "category": "Mathematics",
+      "description": "Collection of advanced mathematics assignments covering linear algebra, calculus, probability theory, and mathematical modeling applications.",
+      "tech_stack": ["LaTeX", "Python", "Mathematical Modeling", "Statistical Analysis"],
+      "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Math_Assignments",
+      "image": "assets/projects/math.svg",
       "featured": true,
       "highlights": [
-        "Recurrent Neural Networks implementation",
-        "Skip-gram word embeddings",
-        "Natural language processing",
-        "Advanced deep learning techniques"
+        "Advanced calculus and probability theory",
+        "Linear algebra applications",
+        "Mathematical modeling",
+        "Complex problem-solving techniques"
+      ]
+    },
+    {
+      "id": "google-cloud",
+      "title": "Google Cloud Generative AI Certification",
+      "category": "Artificial Intelligence",
+      "description": "Certification in Google Cloud's Generative AI technologies covering fundamental concepts, use cases, and implementation methods for generative artificial intelligence.",
+      "tech_stack": ["Google Cloud", "Generative AI", "Machine Learning", "Cloud Computing"],
+      "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Google_Cloud_Cert",
+      "image": "assets/projects/google-cloud.svg",
+      "featured": false,
+      "highlights": [
+        "Generative AI fundamentals",
+        "Google Cloud implementation methods",
+        "AI use case development",
+        "Cloud-based machine learning"
       ]
     }
   ],
@@ -135,7 +135,8 @@
     "Data Science",
     "Software Development",
     "Artificial Intelligence",
-    "Data Analysis"
+    "Data Analysis",
+    "Mathematics"
   ],
   "skills": {
     "Programming Languages": ["Python", "Java", "SQL", "R", "JavaScript", "HTML/CSS"],
