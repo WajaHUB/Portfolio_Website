@@ -3,77 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wajahat Khan - Test Portfolio</title>
-</head>
-<body style="font-family: Arial, sans-serif; margin: 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh;">
-    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <h1 style="font-size: 3em; margin-bottom: 20px;">🚀 Wajahat Khan</h1>
-        <h2 style="font-size: 1.5em; opacity: 0.9; margin-bottom: 40px;">Data Scientist & Machine Learning Engineer</h2>
-        
-        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; margin: 40px 0;">
-            <h3>✅ GitHub Pages is Working!</h3>
-            <p>This test confirms that GitHub Pages deployment is successful.</p>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Portfolio URL:</strong><br>
-                <a href="https://wajahub.github.io/Portfolio_Website/" style="color: #FFE082; text-decoration: none;">
-                    https://wajahub.github.io/Portfolio_Website/
-                </a>
-            </p>
-        </div>
-        
-        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; margin: 40px 0;">
-            <h3>📂 Featured Projects</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin: 15px 0;">
-                    <a href="https://github.com/WajaHUB/Portfolio_Website/tree/main/Projects-master/Bike_Sharing" 
-                       style="color: #FFE082; text-decoration: none; display: block; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                        🚲 Bike Sharing Demand Prediction (Machine Learning)
-                    </a>
-                </li>
-                <li style="margin: 15px 0;">
-                    <a href="https://github.com/WajaHUB/Portfolio_Website/tree/main/Projects-master/GitLet" 
-                       style="color: #FFE082; text-decoration: none; display: block; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                        🔧 GitLet - Version Control System (Java)
-                    </a>
-                </li>
-                <li style="margin: 15px 0;">
-                    <a href="https://github.com/WajaHUB/Portfolio_Website/tree/main/DMA" 
-                       style="color: #FFE082; text-decoration: none; display: block; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                        🧠 Deep Learning & NLP Projects
-                    </a>
-                </li>
-                <li style="margin: 15px 0;">
-                    <a href="https://github.com/WajaHUB/Portfolio_Website/tree/main/Data100" 
-                       style="color: #FFE082; text-decoration: none; display: block; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                        📊 Data Science Fundamentals
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; margin: 40px 0;">
-            <h3>📞 Contact</h3>
-            <p>
-                📧 <a href="mailto:wajakhan@Berkeley.edu" style="color: #FFE082;">wajakhan@Berkeley.edu</a><br>
-                💼 <a href="https://www.linkedin.com/in/wajaakhan/" target="_blank" style="color: #FFE082;">LinkedIn: wajaakhan</a><br>
-                🐙 <a href="https://github.com/WajaCode" target="_blank" style="color: #FFE082;">GitHub: WajaCode</a><br>
-                📱 <a href="tel:5103097334" style="color: #FFE082;">(510) 309-7334</a>
-            </p>
-        </div>
-    </div>
+    <title>Wajahat Khan - Data Scientist & Software Developer</title>
+    <meta name="description" content="Portfolio of Wajahat Khan - Data Scientist, Machine Learning Engineer, and Software Developer specializing in Python, Java, and advanced analytics.">
+    <meta name="keywords" content="Data Science, Machine Learning, Python, Java, Software Development, Analytics">
+    <meta name="author" content="Wajahat Khan">
     
-    <script>
-        console.log('✅ Wajahat Khan Portfolio - GitHub Pages is working!');
-        console.log('🌐 Visit: https://wajahub.github.io/Portfolio_Website/');
-    </script>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Wajahat Khan</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2" href="resume/Wajahat_Khan_Resume.pdf" target="_blank">
+                            <i class="fas fa-download me-1"></i>Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Hi, I'm <span class="text-gradient">Wajahat Khan</span></h1>
+                        <h2 class="hero-subtitle">Data Scientist & Machine Learning Engineer</h2>
+                        <p class="hero-description">
+                            Passionate about transforming data into actionable insights and building intelligent systems. 
+                            Experienced in Python, Java, machine learning, and full-stack development.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                        </div>
+                        <div class="hero-social mt-4">
+                            <a href="https://github.com/WajaCode" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/wajaakhan/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:wajakhan@Berkeley.edu" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="code-animation">
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about data science and software engineering</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="about-content">
+                        <p class="lead">
+                            I'm a dedicated Data Scientist and Software Developer with expertise in machine learning, 
+                            statistical analysis, and full-stack development. Currently pursuing advanced studies at UC Berkeley.
+                        </p>
+                        <p>
+                            My experience spans across various domains including predictive modeling, web scraping, 
+                            computer vision, and algorithm design. I enjoy tackling complex problems and creating 
+                            innovative solutions that drive business value.
+                        </p>
+                        <div class="about-stats mt-4">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number">15+</h3>
+                                        <p class="stat-label">Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number">5+</h3>
+                                        <p class="stat-label">Languages</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number">3+</h3>
+                                        <p class="stat-label">Years Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <img src="assets/img/profile-placeholder.jpg" alt="Wajahat Khan" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Showcasing my best work in data science and software development</p>
+                </div>
+            </div>
+            
+            <div class="row" id="featuredProjects">
+                <!-- Featured projects will be loaded dynamically -->
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="projects.html" class="btn btn-primary btn-lg">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Tools and technologies I work with</p>
+                </div>
+            </div>
+            
+            <div class="row" id="skillsContainer">
+                <!-- Skills will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-light">Get In Touch</h2>
+                    <p class="section-subtitle text-light-50">Let's discuss opportunities and collaborations</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-info">
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-4">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:wajakhan@Berkeley.edu" class="text-light">wajakhan@Berkeley.edu</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:5103097334" class="text-light">(510) 309-7334</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                    <h4>LinkedIn</h4>
+                                    <p><a href="https://www.linkedin.com/in/wajaakhan/" target="_blank" class="text-light">wajaakhan</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 Wajahat Khan. All rights reserved.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/WajaCode" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/wajaakhan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:wajakhan@Berkeley.edu"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
 </body>
-</html><- [ ] https://github.com/WajaCode/Projects/tree/master/Attax%20A.I%20project/Attax%20A.I%20project
-- [ ] https://github.com/WajaCode/Projects/tree/master/BLR_CODE
-- [ ] https://github.com/WajaCode/Projects/tree/master/Bike_Sharing
-- [ ] https://github.com/WajaCode/Projects/tree/master/GitLet/GitLet
-- [ ] Email fix for GitHub Pages -->
-<- [ ] https://github.com/WajaCode/Projects/tree/master/Attax%20A.I%20project/Attax%20A.I%20project
-- [ ] https://github.com/WajaCode/Projects/tree/master/BLR_CODE
-- [ ] https://github.com/WajaCode/Projects/tree/master/Bike_Sharing
-- [ ] https://github.com/WajaCode/Projects/tree/master/GitLet/GitLet
-- [ ] Updated email: wajamail99@gmail.com -->
+</html>
