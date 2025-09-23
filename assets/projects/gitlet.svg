@@ -1,0 +1,82 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="git" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f56500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
+  
+  <!-- Git tree visualization -->
+  <g transform="translate(50, 100)">
+    <!-- Commit nodes -->
+    <circle cx="50" cy="50" r="8" fill="url(#git)"/>
+    <circle cx="120" cy="50" r="8" fill="url(#git)"/>
+    <circle cx="190" cy="50" r="8" fill="url(#git)"/>
+    <circle cx="260" cy="50" r="8" fill="url(#git)"/>
+    
+    <!-- Branch -->
+    <circle cx="120" cy="20" r="8" fill="#48bb78"/>
+    <circle cx="190" cy="20" r="8" fill="#48bb78"/>
+    
+    <!-- Commit lines -->
+    <path d="M58 50 L112 50" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+    <path d="M128 50 L182 50" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+    <path d="M198 50 L252 50" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+    
+    <!-- Branch lines -->
+    <path d="M120 42 L120 28" stroke="#48bb78" stroke-width="3"/>
+    <path d="M128 20 L182 20" stroke="#48bb78" stroke-width="3"/>
+    <path d="M190 28 L190 42" stroke="#48bb78" stroke-width="3"/>
+    
+    <!-- Commit labels -->
+    <text x="46" y="72" fill="rgba(255,255,255,0.8)" font-family="monospace" font-size="10">init</text>
+    <text x="110" y="72" fill="rgba(255,255,255,0.8)" font-family="monospace" font-size="10">commit</text>
+    <text x="180" y="72" fill="rgba(255,255,255,0.8)" font-family="monospace" font-size="10">merge</text>
+    <text x="250" y="72" fill="rgba(255,255,255,0.8)" font-family="monospace" font-size="10">HEAD</text>
+  </g>
+  
+  <!-- Terminal window -->
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="240" height="90" fill="rgba(0,0,0,0.8)" rx="6"/>
+    <rect x="0" y="0" width="240" height="20" fill="rgba(100,100,100,0.3)" rx="6"/>
+    
+    <!-- Terminal buttons -->
+    <circle cx="12" cy="10" r="3" fill="#ff5f57"/>
+    <circle cx="24" cy="10" r="3" fill="#ffbd2e"/>
+    <circle cx="36" cy="10" r="3" fill="#28ca42"/>
+    
+    <!-- Terminal text -->
+    <text x="8" y="40" fill="#00ff00" font-family="monospace" font-size="12">$ gitlet init</text>
+    <text x="8" y="55" fill="rgba(255,255,255,0.8)" font-family="monospace" font-size="11">Initialized empty gitlet repository</text>
+    <text x="8" y="70" fill="#00ff00" font-family="monospace" font-size="12">$ gitlet add file.java</text>
+    <text x="8" y="85" fill="#00ff00" font-family="monospace" font-size="12">$ gitlet commit "Initial"</text>
+  </g>
+  
+  <!-- Title -->
+  <g transform="translate(60, 40)">
+    <text x="0" y="0" fill="white" font-family="Arial" font-size="18" font-weight="bold">GitLet</text>
+    <text x="0" y="20" fill="rgba(255,255,255,0.8)" font-family="Arial" font-size="13">Version Control System</text>
+  </g>
+  
+  <!-- File icons -->
+  <g transform="translate(300, 45)">
+    <rect x="0" y="0" width="20" height="25" fill="rgba(255,255,255,0.2)" rx="2"/>
+    <path d="M14 0 L20 6 L20 25 L0 25 L0 0 L14 0 L14 6 L20 6" fill="rgba(255,255,255,0.1)"/>
+    <rect x="8" y="12" width="8" height="2" fill="rgba(255,255,255,0.3)"/>
+    <rect x="4" y="16" width="12" height="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="4" y="19" width="10" height="1" fill="rgba(255,255,255,0.2)"/>
+    
+    <rect x="25" y="5" width="18" height="22" fill="rgba(255,255,255,0.15)" rx="2"/>
+    <path d="M37 5 L43 11 L43 27 L25 27 L25 5 L37 5 L37 11 L43 11" fill="rgba(255,255,255,0.1)"/>
+    <rect x="29" y="15" width="7" height="2" fill="rgba(255,255,255,0.3)"/>
+    <rect x="28" y="19" width="10" height="1" fill="rgba(255,255,255,0.2)"/>
+    <rect x="28" y="22" width="8" height="1" fill="rgba(255,255,255,0.2)"/>
+  </g>
+</svg>
