@@ -104,10 +104,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-subtitle {
     font-size: clamp(1.25rem, 3vw, 2rem);
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 1.5rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.2s both;
+}
+
+.apple-brand {
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.apple-brand i {
+    font-size: 1.2em;
+    animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+    0%, 100% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
 }
 
 .hero-description {
