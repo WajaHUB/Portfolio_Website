@@ -1,0 +1,30 @@
+Hello,
+
+We uploaded all the files that would be necessary to run the code. The only difference you need to know when running the code is that of your given working directory, that will change depending on where you download the folder. But there is the command  that tells you, your working directory, and just add on the same code lines. Please start with the Data_import juypter notebook, it has more instructions, and it will be very helpful to follow along if you want to start your code from sratch with no downloaded files of the metro data. For UCI_Bike__sharing, download the data and just run the files, it should work easily. For most cases, you will just need to run the lines of the codes. Thank you. Have fun looking through the code. 
+
+
+Also adding in the dataset characteristics explained, you can look through to see what each one were for the Washington Data. 
+
+Dataset characteristics
+	
+	- instant: record index
+	- dteday : date
+	- season : season (1:springer, 2:summer, 3:fall, 4:winter)
+	- yr : year (0: 2011, 1:2012)
+	- mnth : month ( 1 to 12)
+	- hr : hour (0 to 23)
+	- holiday : weather day is holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)
+	- weekday : day of the week
+	- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.
+	+ weathersit : 
+		- 1: Clear, Few clouds, Partly cloudy, Partly cloudy
+		- 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
+		- 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+		- 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
+	- temp : Normalized temperature in Celsius. The values are divided to 41 (max)
+	- atemp: Normalized feeling temperature in Celsius. The values are divided to 50 (max)
+	- hum: Normalized humidity. The values are divided to 100 (max)
+	- windspeed: Normalized wind speed. The values are divided to 67 (max)
+	- casual: count of casual users
+	- registered: count of registered users
+	- cnt: count of total rental bikes including both casual and registered
