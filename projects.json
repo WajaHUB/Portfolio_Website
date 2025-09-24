@@ -7,7 +7,7 @@
       "description": "Predicts bike sharing demand using machine learning models including LSTM neural networks and Random Forest, with real-time weather integration.",
       "tech_stack": ["Python", "Pandas", "Scikit-learn", "TensorFlow", "Weather API", "Jupyter"],
       "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Bike_Sharing_Project",
-      "image": "assets/projects/bike-sharing.svg",
+      "image": "assets/projects/bike-sharing.svg?v=2",
       "featured": false,
       "highlights": [
         "Integrated real-time weather API data",
@@ -103,7 +103,7 @@
       "description": "Collection of advanced mathematics assignments covering linear algebra, calculus, probability theory, and mathematical modeling applications.",
       "tech_stack": ["LaTeX", "Python", "Mathematical Modeling", "Statistical Analysis"],
       "github_url": "https://github.com/WajaHUB/Portfolio_Website/tree/main/Math_Assignments",
-      "image": "assets/projects/math.svg",
+      "image": "assets/projects/math.svg?v=2",
       "featured": false,
       "highlights": [
         "Advanced calculus and probability theory",
