@@ -62,6 +62,7 @@ function initializeHomePage() {
     loadFeaturedProjects();
     loadSkills();
     initializeAnimations();
+    initializeNameTypingAnimation();
 }
 
 // Initialize projects page specific functionality
@@ -316,6 +317,44 @@ function initializeAnimations() {
     animatedElements.forEach(el => observer.observe(el));
 }
 
+// Typing animation for name in hero section
+function initializeNameTypingAnimation() {
+    const nameText = "Wajahat Khan";
+    const nameElement = document.getElementById('typedName');
+    const cursor = document.getElementById('cursor');
+    
+    if (!nameElement || !cursor) return;
+    
+    let nameIndex = 0;
+    nameElement.textContent = '';
+    
+    // Cursor blinking animation
+    let cursorVisible = true;
+    const blinkCursor = () => {
+        cursor.style.opacity = cursorVisible ? '1' : '0';
+        cursorVisible = !cursorVisible;
+    };
+    
+    const cursorInterval = setInterval(blinkCursor, 530);
+    
+    function typeName() {
+        if (nameIndex < nameText.length) {
+            nameElement.textContent += nameText.charAt(nameIndex);
+            nameIndex++;
+            setTimeout(typeName, 150); // Slightly slower for better effect
+        } else {
+            // After name is typed, hide cursor after a brief pause
+            setTimeout(() => {
+                clearInterval(cursorInterval);
+                cursor.style.opacity = '0';
+            }, 1500);
+        }
+    }
+    
+    // Start typing after a brief delay
+    setTimeout(typeName, 800);
+}
+
 // Typing animation for hero section
 function initializeTypingAnimation() {
     const text = "Data Scientist & Machine Learning Engineer";
@@ -384,6 +423,26 @@ const additionalCSS = `
     
     .project-item {
         transition: all 0.3s ease;
+    }
+    
+    /* Typing cursor styles */
+    .typing-cursor {
+        color: #f97316;
+        font-weight: normal;
+        font-size: inherit;
+        margin-left: 2px;
+        animation: blink 1.2s infinite;
+        transition: opacity 0.3s ease;
+    }
+    
+    @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+    }
+    
+    /* Ensure name appears immediately on slower connections */
+    #typedName {
+        min-height: 1em;
     }
 `;
 
