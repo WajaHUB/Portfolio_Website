@@ -143,6 +143,9 @@
     "Data Science & ML": ["Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch", "Matplotlib", "Seaborn"],
     "Tools & Platforms": ["Jupyter", "Git", "GitHub", "Docker", "AWS", "Google Cloud"],
     "Databases": ["MySQL", "PostgreSQL", "MongoDB"],
-    "Specialties": ["Machine Learning", "Data Analysis", "Web Scraping", "Statistical Analysis", "Algorithm Design"]
+    "Specialties": ["Machine Learning", "Data Analysis", "Web Scraping", "Statistical Analysis", "Algorithm Design"],
+    "MLOps & DevOps": ["Data Pipelines", "Model Deployment", "CI/CD", "Kubernetes", "Data Validation", "Monitoring"],
+    "Business & Leadership": ["Project Management", "Team Leadership", "Agile Methodology", "Business Analytics", "Communication"],
+    "Advanced Analytics": ["A/B Testing", "Predictive Modeling", "Data Visualization", "Statistical Inference", "Time Series"]
   }
 }
