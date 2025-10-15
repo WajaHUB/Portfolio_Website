@@ -157,7 +157,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991.98px) {
     .hero-section {
         min-height: 100vh;
-        padding: 1rem 0;
+        padding-top: 120px !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .hero-section .min-vh-100 {
+        min-height: auto !important;
+        align-items: flex-start !important;
     }
     
     .hero-content {
@@ -262,7 +268,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575.98px) {
     .hero-section {
-        padding: 0.5rem 0;
+        padding-top: 100px !important;
+        padding-bottom: 1rem !important;
+    }
+    
+    .hero-section .min-vh-100 {
+        min-height: auto !important;
+        align-items: flex-start !important;
     }
     
     .hero-content {
