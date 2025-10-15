@@ -217,52 +217,49 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .tech-visualization {
-        height: 250px;
-        margin-top: 1rem;
+        height: 200px;
+        margin-top: 1.5rem;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
+    /* Hide all floating elements and tech circle on mobile */
+    .floating-element,
     .tech-circle {
-        width: 140px !important;
-        height: 140px !important;
-        top: 50% !important;
-        right: 50% !important;
-        transform: translate(50%, -50%) !important;
+        display: none !important;
     }
     
-    .tech-circle i {
-        font-size: 2rem !important;
+    /* Create clean tech stack icons for mobile */
+    .tech-visualization::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
     
-    .tech-circle div {
-        font-size: 0.8rem !important;
-    }
-    
-    .tech-circle small {
-        font-size: 0.6rem !important;
-    }
-    
-    /* Hide most floating elements on mobile for cleaner look */
-    .floating-element {
-        display: none;
-    }
-    
-    /* Only show key floating elements */
-    .floating-element.robot,
-    .floating-element.python-logo {
+    /* Add individual tech icons */
+    .tech-visualization::after {
+        content: '🐍 Python  •  🤖 AI/ML  •  ☁️ Cloud';
         display: block;
-        font-size: 1.8rem !important;
-    }
-    
-    /* Position the visible floating elements nicely */
-    .floating-element.robot {
-        top: 20% !important;
-        right: 10% !important;
-    }
-    
-    .floating-element.python-logo {
-        top: 80% !important;
-        right: 15% !important;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        padding: 1rem 1.5rem;
+        color: white;
+        font-size: 0.95rem;
+        font-weight: 500;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        letter-spacing: 0.5px;
+        animation: fadeInUp 1s ease 1.2s both;
     }
 }
 
@@ -314,30 +311,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .tech-visualization {
-        height: 200px;
-        margin-top: 0.5rem;
+        height: 150px;
+        margin-top: 1rem;
     }
     
-    .tech-circle {
-        width: 100px !important;
-        height: 100px !important;
-    }
-    
-    .tech-circle i {
-        font-size: 1.5rem !important;
-    }
-    
-    .tech-circle div {
-        font-size: 0.7rem !important;
-    }
-    
-    .tech-circle small {
-        font-size: 0.55rem !important;
-    }
-    
-    .floating-element.robot,
-    .floating-element.python-logo {
-        font-size: 1.4rem !important;
+    .tech-visualization::after {
+        font-size: 0.9rem !important;
+        padding: 0.8rem 1.2rem !important;
     }
     
     .hero-buttons .btn {
