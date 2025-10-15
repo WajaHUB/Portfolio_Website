@@ -53,6 +53,22 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 0;
 }
 
+@media (max-width: 991.98px) {
+    #mainNav {
+        padding: 0.75rem 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #mainNav {
+        padding: 0.5rem 0;
+    }
+    
+    #mainNav .navbar-brand {
+        font-size: 1.3rem;
+    }
+}
+
 #mainNav .navbar-brand {
     font-size: 1.5rem;
     font-weight: 700;
@@ -141,17 +157,20 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991.98px) {
     .hero-section {
         min-height: 100vh;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     
     .hero-content {
         text-align: center;
         margin-bottom: 2rem;
+        padding: 0 1rem;
     }
     
     .hero-title {
-        font-size: clamp(2rem, 8vw, 3rem);
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
         margin-bottom: 1rem;
+        line-height: 1.2;
+        word-wrap: break-word;
     }
     
     .hero-subtitle {
@@ -192,119 +211,126 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .tech-visualization {
-        height: 300px;
-        margin-top: 2rem;
+        height: 250px;
+        margin-top: 1rem;
+        position: relative;
     }
     
     .tech-circle {
-        width: 150px !important;
-        height: 150px !important;
+        width: 140px !important;
+        height: 140px !important;
         top: 50% !important;
         right: 50% !important;
         transform: translate(50%, -50%) !important;
     }
     
     .tech-circle i {
-        font-size: 2.5rem !important;
-    }
-    
-    .tech-circle div {
-        font-size: 0.9rem !important;
-    }
-    
-    .tech-circle small {
-        font-size: 0.7rem !important;
-    }
-    
-    .floating-element {
         font-size: 2rem !important;
     }
     
-    /* Adjust floating element positions for mobile */
+    .tech-circle div {
+        font-size: 0.8rem !important;
+    }
+    
+    .tech-circle small {
+        font-size: 0.6rem !important;
+    }
+    
+    /* Hide most floating elements on mobile for cleaner look */
+    .floating-element {
+        display: none;
+    }
+    
+    /* Only show key floating elements */
+    .floating-element.robot,
+    .floating-element.python-logo {
+        display: block;
+        font-size: 1.8rem !important;
+    }
+    
+    /* Position the visible floating elements nicely */
     .floating-element.robot {
-        top: 10% !important;
-        right: 15% !important;
-    }
-    
-    .floating-element.chart {
-        top: 85% !important;
-        right: 20% !important;
-    }
-    
-    .floating-element.code {
         top: 20% !important;
         right: 10% !important;
     }
     
-    .floating-element.brain {
-        top: 5% !important;
-        right: 50% !important;
-    }
-    
-    .floating-element.database {
-        top: 90% !important;
-        right: 50% !important;
-    }
-    
     .floating-element.python-logo {
-        top: 30% !important;
-        right: 5% !important;
-    }
-    
-    .floating-element.apple-logo {
-        top: 70% !important;
-        right: 80% !important;
-    }
-    
-    .floating-element.cloud {
-        top: 15% !important;
-        right: 85% !important;
+        top: 80% !important;
+        right: 15% !important;
     }
 }
 
 @media (max-width: 575.98px) {
+    .hero-section {
+        padding: 0.5rem 0;
+    }
+    
+    .hero-content {
+        padding: 0 0.5rem;
+    }
+    
     .hero-title {
-        font-size: clamp(1.8rem, 10vw, 2.5rem);
+        font-size: clamp(1.5rem, 8vw, 2rem);
+        margin-bottom: 0.8rem;
     }
     
     .hero-subtitle {
-        font-size: clamp(1rem, 6vw, 1.3rem);
+        font-size: clamp(0.9rem, 5vw, 1.2rem);
+        margin-bottom: 0.5rem;
     }
     
     .hero-role {
-        font-size: clamp(0.8rem, 5vw, 1rem);
+        font-size: clamp(0.75rem, 4vw, 0.9rem);
+        margin-bottom: 0.8rem;
     }
     
     .site-credit {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
     }
     
     .hero-description {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        margin-bottom: 1.2rem;
     }
     
     .social-link {
-        width: 50px;
-        height: 50px;
-        font-size: 1.1rem;
-        margin-right: 0.6rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+        margin-right: 0.5rem;
     }
     
     .tech-visualization {
-        height: 250px;
+        height: 200px;
+        margin-top: 0.5rem;
     }
     
     .tech-circle {
-        width: 120px !important;
-        height: 120px !important;
+        width: 100px !important;
+        height: 100px !important;
     }
     
     .tech-circle i {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
     
-    .floating-element {
-        font-size: 1.5rem !important;
+    .tech-circle div {
+        font-size: 0.7rem !important;
+    }
+    
+    .tech-circle small {
+        font-size: 0.55rem !important;
+    }
+    
+    .floating-element.robot,
+    .floating-element.python-logo {
+        font-size: 1.4rem !important;
+    }
+    
+    .hero-buttons .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.5rem;
     }
 }
 
