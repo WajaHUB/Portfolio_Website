@@ -116,11 +116,33 @@ function createProjectCard(project, showDetails = false) {
     const card = document.createElement('div');
     card.className = 'card project-card h-100';
     
-    // Use actual SVG image if available, otherwise fallback
-    const projectImage = project.image || `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" fill="%23667eea"><rect width="400" height="220" fill="url(%23gradient)"/><defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23667eea"/><stop offset="100%" style="stop-color:%23764ba2"/></linearGradient></defs><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="24" font-weight="600">${project.title}</text></svg>`;
+    // Create clean gradient backgrounds based on category
+    const getProjectGradient = (category) => {
+        const gradients = {
+            'Machine Learning': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            'Data Science': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+            'Software Development': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+            'Artificial Intelligence': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+            'Data Analysis': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+        };
+        return gradients[category] || 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+    };
+    
+    const getCategoryIcon = (category) => {
+        const icons = {
+            'Machine Learning': '🤖',
+            'Data Science': '📊',
+            'Software Development': '💻',
+            'Artificial Intelligence': '🧠',
+            'Data Analysis': '📈'
+        };
+        return icons[category] || '💻';
+    };
     
     card.innerHTML = `
-        <img src="${projectImage}" class="card-img-top" alt="${project.title}" style="height: 200px; object-fit: cover;">
+        <div class="project-image" style="height: 200px; background: ${getProjectGradient(project.category)}; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; border-radius: 0.375rem 0.375rem 0 0;">
+            ${getCategoryIcon(project.category)}
+        </div>
         <div class="card-body d-flex flex-column">
             <div class="mb-2">
                 <span class="badge bg-primary rounded-pill">${project.category}</span>
@@ -157,10 +179,35 @@ function showProjectModal(projectId) {
     
     modalLabel.textContent = project.title;
     
+    // Create clean gradient backgrounds based on category
+    const getProjectGradient = (category) => {
+        const gradients = {
+            'Machine Learning': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            'Data Science': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+            'Software Development': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+            'Artificial Intelligence': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+            'Data Analysis': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+        };
+        return gradients[category] || 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+    };
+    
+    const getCategoryIcon = (category) => {
+        const icons = {
+            'Machine Learning': '🤖',
+            'Data Science': '📊',
+            'Software Development': '💻',
+            'Artificial Intelligence': '🧠',
+            'Data Analysis': '📈'
+        };
+        return icons[category] || '💻';
+    };
+    
     modalBody.innerHTML = `
         <div class="row">
             <div class="col-md-6">
-                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220' fill='%23667eea'><rect width='400' height='220' fill='url(%23gradient)'/><defs><linearGradient id='gradient' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23667eea'/><stop offset='100%' style='stop-color:%23764ba2'/></linearGradient></defs><text x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='24' font-weight='600'>${project.title}</text></svg>" class="img-fluid rounded mb-3" alt="${project.title}">
+                <div class="project-modal-image" style="height: 220px; background: ${getProjectGradient(project.category)}; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem; border-radius: 10px; margin-bottom: 1rem;">
+                    ${getCategoryIcon(project.category)}
+                </div>
             </div>
             <div class="col-md-6">
                 <h5>Category</h5>

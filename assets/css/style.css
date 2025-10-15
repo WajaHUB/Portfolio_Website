@@ -1421,3 +1421,31 @@ h1, h2, h3, h4, h5, h6 {
         transform: rotate(360deg) translateX(50px) rotate(-360deg);
     }
 }
+
+/* Project Card Improvements */
+.project-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.project-card:hover .project-image {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:hover .project-image::before {
+    opacity: 1;
+}
