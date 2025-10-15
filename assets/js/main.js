@@ -63,6 +63,7 @@ function initializeHomePage() {
     loadSkills();
     initializeAnimations();
     initializeNameTypingAnimation();
+    initializeRoleTypingAnimation();
 }
 
 // Initialize projects page specific functionality
@@ -354,6 +355,109 @@ function initializeNameTypingAnimation() {
     // Start typing after a brief delay
     setTimeout(typeName, 800);
 }
+
+// TypeCycler class for cycling through job roles
+class TypeCycler {
+    constructor(element, words, options = {}) {
+        this.element = element;
+        this.words = words;
+        this.options = {
+            typingSpeed: options.typingSpeed || 100,
+            deletingSpeed: options.deletingSpeed || 50,
+            delayBetweenWords: options.delayBetweenWords || 2000,
+            loop: options.loop !== false
+        };
+        this.wordIndex = 0;
+        this.charIndex = 0;
+        this.isDeleting = false;
+        this.timeoutId = null;
+        
+        this.cycle();
+    }
+    
+    cycle() {
+        const currentWord = this.words[this.wordIndex];
+        
+        if (this.isDeleting) {
+            this.element.textContent = currentWord.substring(0, this.charIndex - 1);
+            this.charIndex--;
+            
+            if (this.charIndex === 0) {
+                this.isDeleting = false;
+                this.wordIndex = (this.wordIndex + 1) % this.words.length;
+                this.timeoutId = setTimeout(() => this.cycle(), 500);
+            } else {
+                this.timeoutId = setTimeout(() => this.cycle(), this.options.deletingSpeed);
+            }
+        } else {
+            this.element.textContent = currentWord.substring(0, this.charIndex + 1);
+            this.charIndex++;
+            
+            if (this.charIndex === currentWord.length) {
+                this.isDeleting = true;
+                this.timeoutId = setTimeout(() => this.cycle(), this.options.delayBetweenWords);
+            } else {
+                this.timeoutId = setTimeout(() => this.cycle(), this.options.typingSpeed);
+            }
+        }
+    }
+    
+    destroy() {
+        if (this.timeoutId) {
+            clearTimeout(this.timeoutId);
+        }
+    }
+}
+
+// Initialize role cycling animation
+function initializeRoleTypingAnimation() {
+    const roles = [
+        "Data Scientist",
+        "Data Analyst", 
+        "Data Engineer",
+        "Software Engineer",
+        "Cloud Engineer"
+    ];
+    
+    const rolesElement = document.getElementById('typedRoles');
+    const rolesCursor = document.getElementById('rolesCursor');
+    
+    if (!rolesElement || !rolesCursor) return;
+    
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    
+    if (prefersReducedMotion.matches) {
+        // Show first role immediately without animation
+        rolesElement.textContent = roles[0];
+        rolesCursor.style.opacity = '0';
+        return;
+    }
+    
+    // Hide the cursor initially
+    rolesCursor.style.opacity = '0';
+    
+    // Start role cycling after name animation completes (approximately 3.5 seconds)
+    setTimeout(() => {
+        rolesCursor.style.opacity = '1';
+        
+        const typeCycler = new TypeCycler(rolesElement, roles, {
+            typingSpeed: 80,
+            deletingSpeed: 40,
+            delayBetweenWords: 2000
+        });
+        
+        // Store reference for cleanup if needed
+        window.roleTypeCycler = typeCycler;
+    }, 3500);
+}
+
+// Cleanup function for page unload
+window.addEventListener('beforeunload', function() {
+    if (window.roleTypeCycler) {
+        window.roleTypeCycler.destroy();
+    }
+});
 
 // Typing animation for hero section
 function initializeTypingAnimation() {
