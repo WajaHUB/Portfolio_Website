@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .typed-roles {
-    color: var(--accent-color);
+    color: white;
     font-weight: 700;
     min-width: 2px;
     display: inline-block;

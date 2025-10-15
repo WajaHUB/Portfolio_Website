@@ -62,7 +62,6 @@ function initializeHomePage() {
     loadFeaturedProjects();
     loadSkills();
     initializeAnimations();
-    initializeNameTypingAnimation();
     initializeRoleTypingAnimation();
 }
 
@@ -437,7 +436,7 @@ function initializeRoleTypingAnimation() {
     // Hide the cursor initially
     rolesCursor.style.opacity = '0';
     
-    // Start role cycling after name animation completes (approximately 3.5 seconds)
+    // Start role cycling after a brief delay
     setTimeout(() => {
         rolesCursor.style.opacity = '1';
         
@@ -449,7 +448,7 @@ function initializeRoleTypingAnimation() {
         
         // Store reference for cleanup if needed
         window.roleTypeCycler = typeCycler;
-    }, 3500);
+    }, 1000);
 }
 
 // Cleanup function for page unload
