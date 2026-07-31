@@ -193,6 +193,29 @@
             font-weight: bold;
         }
 
+        .company-via {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #6b7280;
+            letter-spacing: 0.01em;
+        }
+
+        .achievement-group {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #7c3aed;
+            margin: 18px 0 8px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ede9fe;
+        }
+
+        .achievement-group:first-of-type {
+            margin-top: 10px;
+        }
+
         .skills-tags {
             display: flex;
             flex-wrap: wrap;
@@ -227,7 +250,87 @@
             margin-right: 10%;
         }
 
+        .header-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .header-btn {
+            display: inline-block;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.5);
+            transition: all 0.3s ease;
+        }
+
+        .header-btn:hover {
+            background: white;
+            color: #4f46e5;
+        }
+
+        .panel {
+            padding: 10px 40px 50px;
+        }
+
+        .panel h2 {
+            font-size: 1.6rem;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4f46e5;
+            display: inline-block;
+        }
+
+        .skill-group {
+            margin-bottom: 22px;
+        }
+
+        .skill-group h3 {
+            font-size: 1rem;
+            color: #4f46e5;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .education-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 5px solid #4f46e5;
+            border-radius: 12px;
+            padding: 20px 25px;
+        }
+
+        .education-icon {
+            font-size: 2.5rem;
+        }
+
+        .education-details h3 {
+            font-size: 1.15rem;
+            color: #1f2937;
+            margin-bottom: 4px;
+        }
+
+        .education-details p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
         @media (max-width: 768px) {
+            .panel {
+                padding: 10px 20px 40px;
+            }
+
             .timeline::before {
                 left: 30px;
             }
@@ -265,64 +368,100 @@
         <div class="header">
             <h1>Professional Experience</h1>
             <p>My journey in technology and data science</p>
+            <div class="header-actions">
+                <a class="header-btn" href="index.html">&larr; Back to Portfolio</a>
+                <a class="header-btn" href="resume/Apple_Wajahat_Khan.pdf" target="_blank">Download Resume</a>
+            </div>
         </div>
 
         <div class="timeline">
+            <!-- Apple Data Project Manager -->
+            <div class="experience-card">
+                <div class="timeline-dot apple-dot">🍎</div>
+                <div class="card-content">
+                    <div class="company-name">Apple Inc. <span class="company-via">via Inspyr Solutions</span></div>
+                    <div class="job-title">Data Project Manager</div>
+                    <div class="date-location">
+                        <span>📅 February 2026 - Present</span>
+                        <span>📍 Cupertino, CA</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Built automated data pipelines using Python, AWS S3, and Microsoft Fabric to connect engineering and vendor data, improving tracking, reporting, and dashboard visibility</li>
+                        <li>Developed Python automation tools that eliminated hours of repetitive manual work by automating data validation and routine engineering processes</li>
+                        <li>Created automated workflows that reduced manual processing by roughly 30 minutes per team each day, freeing teams for higher-value work</li>
+                        <li>Collaborate with engineering, vendors, and cross-functional teams to improve data quality, streamline reporting, and support project execution</li>
+                    </ul>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">Microsoft Fabric</span>
+                        <span class="skill-tag">ETL/ELT Pipelines</span>
+                        <span class="skill-tag">Dashboards</span>
+                        <span class="skill-tag">KPI Reporting</span>
+                    </div>
+                </div>
+                <div class="visual-element">📈</div>
+            </div>
+
             <!-- Apple AI/ML Data Operations -->
             <div class="experience-card">
                 <div class="timeline-dot apple-dot">🍎</div>
                 <div class="card-content">
-                    <div class="company-name">Apple Inc.</div>
-                    <div class="job-title">AI/ML Data Operations</div>
+                    <div class="company-name">Apple Inc. <span class="company-via">via Inspyr Solutions</span></div>
+                    <div class="job-title">Engineering Project Manager — AI &amp; ML Data Operations</div>
                     <div class="date-location">
-                        <span>📅 June 2025 - Present</span>
+                        <span>📅 January 2025 - October 2025</span>
                         <span>📍 Cupertino, CA</span>
                     </div>
+
+                    <div class="achievement-group">Program Leadership</div>
                     <ul class="achievements">
-                        <li>Developed geospatial maps (Node.js, React, Python) for AI/ML route planning</li>
-                        <li>Collaborated with engineers to identify model gaps and prepare evaluation data for AI/ML data pipelines</li>
-                        <li>Developed automation software reducing workflow time by 30% and boosting reliability</li>
-                        <li>Designed day-to-day structure of data collection workflows for confidential AI/ML initiative</li>
-                        <li>Automated data collection, validation, and preprocessing workflows using Python</li>
+                        <li>Selected as an original member of Apple's AI/ML data collection initiative, helping establish the operational standards, workflows, and protocols adopted across future moderator programs</li>
+                        <li>Led end-to-end project planning with engineering, legal, and cross-functional stakeholders to define requirements, timelines, compliance processes, and scalable execution strategies</li>
+                        <li>Successfully led the technical development and operational rollout of 9+ AI/ML data collection projects in approximately 18 months</li>
+                        <li>Architected repeatable, scalable collection frameworks that let projects transition seamlessly to external vendors after internal validation</li>
+                        <li>Managed daily communication with engineering teams and stakeholders to keep milestones, collection quotas, and quality objectives on track</li>
                     </ul>
+
+                    <div class="achievement-group">Engineering &amp; Automation</div>
+                    <ul class="achievements">
+                        <li>Developed and deployed Python automation tools using Linux, SSH, and internal systems to extract data from prototype Apple devices, reducing manual effort and improving collection efficiency</li>
+                        <li>Designed and implemented a scalable data ingestion pipeline for processing and uploading large-scale datasets into internal infrastructure</li>
+                        <li>Built internal metadata management tools and user interfaces that streamlined annotation workflows while improving consistency and data quality</li>
+                        <li>Engineered automated validation and quality assurance checks verifying metadata integrity before ingestion, significantly reducing downstream errors</li>
+                        <li>Contributed to an internal application enabling synchronized multi-device recording, improving efficiency during large-scale AI data collection</li>
+                        <li>Rapidly developed numerous internal automation tools using Python and AI-assisted development, accelerating engineering workflows</li>
+                    </ul>
+
+                    <div class="achievement-group">GIS &amp; Routing</div>
+                    <ul class="achievements">
+                        <li>Helped develop an internal GIS routing application using Apple Maps APIs to improve route planning and field data collection</li>
+                        <li>Built routing solutions accounting for traffic, construction, road closures, and map updates to improve operational efficiency</li>
+                        <li>Developed geospatial data workflows that adapted to changing routing requirements and improved field planning</li>
+                    </ul>
+
+                    <div class="achievement-group">Hardware, Quality &amp; Enablement</div>
+                    <ul class="achievements">
+                        <li>Installed and configured experimental operating system builds on prototype hardware, preparing devices for engineering validation and production data collection</li>
+                        <li>Created dashboards and reporting tools to monitor collection progress, project health, throughput, and quality metrics</li>
+                        <li>Trained over 40 Apple moderators, 2 project managers, and 3 backend/data engineers on collection procedures, tooling, prototype devices, and operational best practices</li>
+                        <li>Performed quality assurance on collected assets, maintaining strict standards before delivery to engineering teams</li>
+                    </ul>
+
                     <div class="skills-tags">
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">SSH</span>
+                        <span class="skill-tag">Apple Maps APIs</span>
+                        <span class="skill-tag">GIS</span>
                         <span class="skill-tag">Data Pipelines</span>
+                        <span class="skill-tag">Metadata Tooling</span>
+                        <span class="skill-tag">Data Quality</span>
                         <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Project Management</span>
                     </div>
                 </div>
                 <div class="visual-element">🔬</div>
-            </div>
-
-            <!-- Apple Data Collection Moderator -->
-            <div class="experience-card">
-                <div class="timeline-dot apple-dot">🍎</div>
-                <div class="card-content">
-                    <div class="company-name">Apple Inc.</div>
-                    <div class="job-title">Data Collection Moderator</div>
-                    <div class="date-location">
-                        <span>📅 January 2025 - May 2025</span>
-                        <span>📍 Cupertino, CA</span>
-                    </div>
-                    <ul class="achievements">
-                        <li>Reduced moderation workflow from 8 to 3 steps, cutting review time by 50%+</li>
-                        <li>Built "WajiWare" automation tool, scaling AWS uploads for thousands of devices</li>
-                        <li>Collected images and videos with Apple prototype devices</li>
-                        <li>Conducted human evaluation, annotation, and validation of AI/ML training data to support Apple Intelligence model development</li>
-                        <li>Configured and supported prototype hardware, ensuring safe, reliable operation</li>
-                    </ul>
-                    <div class="skills-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Data Annotation</span>
-                        <span class="skill-tag">Process Optimization</span>
-                        <span class="skill-tag">Hardware Support</span>
-                    </div>
-                </div>
-                <div class="visual-element">📱</div>
             </div>
 
             <!-- ZC Global Commerce -->
@@ -330,22 +469,24 @@
                 <div class="timeline-dot commerce-dot">🛒</div>
                 <div class="card-content">
                     <div class="company-name">ZC Global Commerce LLC</div>
-                    <div class="job-title">Data Analyst / E-Commerce Business Analyst</div>
+                    <div class="job-title">Co-Founder / Data Analyst</div>
                     <div class="date-location">
-                        <span>📅 July 2023 - February 2025</span>
-                        <span>📍 Richmond, CA</span>
+                        <span>📅 July 2023 - January 2025</span>
+                        <span>📍 Remote</span>
                     </div>
                     <ul class="achievements">
-                        <li>Launched and scaled direct-to-consumer e-commerce store with Shopify and Amazon integrations</li>
+                        <li>Developed forecasting models using Python and Excel, reducing shipping costs by 30% through inventory optimization</li>
+                        <li>Built automated dashboards to monitor revenue, inventory, and operational KPIs</li>
+                        <li>Launched and scaled a direct-to-consumer e-commerce store with Shopify and Amazon integrations</li>
                         <li>Analyzed customer behavior and sales data to inform pricing, inventory, promotions, and logistics decisions</li>
-                        <li>Improved revenue outcomes, order accuracy, and reduced shipping costs by 30%</li>
                         <li>Managed e-commerce integrations and automated analytics workflows for operations and SEO optimization</li>
                         <li>Achieved full tax compliance and legal registration while minimizing administrative overhead</li>
                     </ul>
                     <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Forecasting</span>
                         <span class="skill-tag">Shopify</span>
                         <span class="skill-tag">Amazon</span>
-                        <span class="skill-tag">Data Analysis</span>
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">Business Analytics</span>
                         <span class="skill-tag">SEO</span>
@@ -387,23 +528,25 @@
                 <div class="timeline-dot berkeley-dot">🎓</div>
                 <div class="card-content">
                     <div class="company-name">University of California, Berkeley</div>
-                    <div class="job-title">Data Science Student Projects</div>
+                    <div class="job-title">Data Science Student</div>
                     <div class="date-location">
                         <span>📅 August 2023 - December 2023</span>
-                        <span>📍 Berkeley, CA</span>
+                        <span>📍 Remote</span>
                     </div>
                     <ul class="achievements">
-                        <li>Led 7-member team to develop random forest model predicting daily bike demand (99.9% accuracy)</li>
-                        <li>Achieved top 10% ranking in Kaggle Titanic Competition (700 participants)</li>
-                        <li>Built insurance eligibility classifier using logistic regression</li>
-                        <li>Developed housing price estimator using random forest algorithm</li>
-                        <li>Created Honda car sales predictor using linear regression with time series</li>
-                        <li>Built custom Ataxx Game AI with strategic move evaluation</li>
+                        <li>Built a transportation demand forecasting model using Python to predict bicycle demand across multiple locations</li>
+                        <li>Applied GIS and geospatial analysis to optimize bicycle distribution and routing decisions</li>
+                        <li>Combined weather, historical ridership, and geographic data to improve forecasting accuracy and operational planning</li>
+                        <li>Led a 7-member team to develop a random forest model predicting daily bike demand (99.9% accuracy)</li>
+                        <li>Achieved top 10% ranking in the Kaggle Titanic Competition (700 participants)</li>
+                        <li>Built an insurance eligibility classifier using logistic regression and a housing price estimator using random forest</li>
+                        <li>Created a Honda car sales predictor using linear regression with time series, and a custom Ataxx game AI</li>
                     </ul>
                     <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
                         <span class="skill-tag">Machine Learning</span>
                         <span class="skill-tag">Random Forest</span>
-                        <span class="skill-tag">Logistic Regression</span>
+                        <span class="skill-tag">GIS</span>
                         <span class="skill-tag">Time Series</span>
                         <span class="skill-tag">Team Leadership</span>
                     </div>
@@ -437,6 +580,56 @@
                     </div>
                 </div>
                 <div class="visual-element">🏭</div>
+            </div>
+        </div>
+
+        <!-- Core Skills -->
+        <div class="panel">
+            <h2>Core Skills</h2>
+            <div class="skill-group">
+                <h3>Data Engineering &amp; Development</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Unix/Linux</span>
+                    <span class="skill-tag">Shell Scripting</span>
+                    <span class="skill-tag">Microsoft Fabric</span>
+                    <span class="skill-tag">AWS S3</span>
+                    <span class="skill-tag">ETL/ELT Pipelines</span>
+                    <span class="skill-tag">Data Warehousing</span>
+                    <span class="skill-tag">Data Integration</span>
+                    <span class="skill-tag">Dashboard Development</span>
+                    <span class="skill-tag">KPI Reporting</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3>GIS &amp; Analytics</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">GIS</span>
+                    <span class="skill-tag">Route Optimization</span>
+                    <span class="skill-tag">Geospatial Data</span>
+                    <span class="skill-tag">Digital Mapping</span>
+                    <span class="skill-tag">Apple Maps APIs</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Forecasting</span>
+                    <span class="skill-tag">Statistical Analysis</span>
+                    <span class="skill-tag">Data Validation</span>
+                    <span class="skill-tag">Data Quality</span>
+                    <span class="skill-tag">Process Automation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="panel">
+            <h2>Education</h2>
+            <div class="education-card">
+                <div class="education-icon">🎓</div>
+                <div class="education-details">
+                    <h3>B.S. in Data Science</h3>
+                    <p>University of California, Berkeley &nbsp;•&nbsp; 2019 – 2023</p>
+                </div>
             </div>
         </div>
     </div>

@@ -139,13 +139,15 @@
     "Mathematics"
   ],
   "skills": {
-    "Programming Languages": ["Python", "Java", "SQL", "R", "JavaScript", "HTML/CSS"],
+    "Programming Languages": ["Python", "Java", "SQL", "R", "JavaScript", "HTML/CSS", "Shell Scripting"],
     "Data Science & ML": ["Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch", "Matplotlib", "Seaborn"],
-    "Tools & Platforms": ["Jupyter", "Git", "GitHub", "Docker", "AWS", "Google Cloud"],
+    "Data Engineering": ["ETL/ELT Pipelines", "Microsoft Fabric", "AWS S3", "Data Warehousing", "Data Integration", "Data Ingestion", "Metadata Management"],
+    "GIS & Geospatial": ["GIS", "Route Optimization", "Geospatial Data", "Digital Mapping", "Apple Maps APIs"],
+    "Tools & Platforms": ["Jupyter", "Git", "GitHub", "Unix/Linux", "SSH", "Docker", "AWS", "Google Cloud"],
     "Databases": ["MySQL", "PostgreSQL", "MongoDB"],
     "Specialties": ["Machine Learning", "Data Analysis", "Web Scraping", "Statistical Analysis", "Algorithm Design"],
-    "MLOps & DevOps": ["Data Pipelines", "Model Deployment", "CI/CD", "Kubernetes", "Data Validation", "Monitoring"],
-    "Business & Leadership": ["Project Management", "Team Leadership", "Agile Methodology", "Business Analytics", "Communication"],
-    "Advanced Analytics": ["A/B Testing", "Predictive Modeling", "Data Visualization", "Statistical Inference", "Time Series"]
+    "MLOps & DevOps": ["Data Pipelines", "Model Deployment", "CI/CD", "Kubernetes", "Data Validation", "Data Quality", "Process Automation", "Monitoring"],
+    "Business & Leadership": ["Project Management", "Team Leadership", "Agile Methodology", "Business Analytics", "Stakeholder Management", "Communication"],
+    "Advanced Analytics": ["A/B Testing", "Predictive Modeling", "Forecasting", "Dashboard Development", "KPI Reporting", "Data Visualization", "Statistical Inference", "Time Series"]
   }
 }
